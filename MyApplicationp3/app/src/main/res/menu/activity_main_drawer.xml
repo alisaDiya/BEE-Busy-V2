@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Timer"
+            android:icon="@drawable/baseline_access_time_24"
+            android:title="Timer" />
+        <item
+            android:id="@+id/nav_pomodoro"
+            android:icon="@drawable/baseline_access_alarms_24"
+            android:title="Pomodoro" />
+        <item
+            android:id="@+id/nav_goal"
+            android:icon="@drawable/baseline_check_box_24"
+            android:title="Goals" />
+        <item
+            android:id="@+id/nav_graphgoal"
+            android:icon="@drawable/baseline_auto_graph_24"
+            android:title="Graph Goal" />
+        <item
+            android:id="@+id/nav_aboutscreen1"
+            android:icon="@drawable/baseline_info_24"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Logout" />
+    </group>
+</menu>

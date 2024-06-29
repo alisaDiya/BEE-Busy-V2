@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellow"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="295dp"
+        android:layout_height="142dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/alisa" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets BUZZ into productivity with beebusy timer"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edusername"
+        android:layout_width="285dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:background="@drawable/changef"
+        android:hint="Please enter your username"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/edemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <EditText
+        android:id="@+id/edemail"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:background="@drawable/changef"
+        android:hint="Please enter your email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edpassword"
+        android:layout_width="322dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:background="@drawable/changef"
+        android:hint="Please enter your password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edconfirmpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edemail"
+        app:layout_constraintVertical_bias="0.694" />
+
+    <EditText
+        android:id="@+id/edconfirmpassword"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:background="@drawable/changef"
+        android:hint="Please confirm your password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnsignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edemail"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.773" />
+
+    <TextView
+        android:id="@+id/loginreg"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
